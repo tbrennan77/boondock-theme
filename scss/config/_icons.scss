@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Boondock-Walker';
+	src:url('_icons/Boondock-Walker.eot');
+	src:url('_icons/Boondock-Walker.eot?#iefix') format('embedded-opentype'),
+		url('_icons/Boondock-Walker.woff') format('woff'),
+		url('_icons/Boondock-Walker.ttf') format('truetype'),
+		url('_icons/Boondock-Walker.svg#Boondock-Walker') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'Boondock-Walker';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-facebook, .icon-twitter, .icon-sidebar-open, .icon-sidebar-closed, .icon-block-b {
+	font-family: 'Boondock-Walker';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-sidebar-open:before {
+	content: "\e002";
+}
+.icon-sidebar-closed:before {
+	content: "\e003";
+}
+.icon-block-b:before {
+	content: "\e004";
+}
+.icon-small {
+	font-size:emCalc(17px);
+}
+.icon-medium {
+	font-size:emCalc(28px);
+}
+.icon-large {
+	font-size:emCalc(38px);
+}

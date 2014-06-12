@@ -1,0 +1,325 @@
+@mixin stainless-black {
+  font-family: Stainless;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-black {
+  font-family: "Stainless Black";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-black-italic {
+  font-family: "Stainless Black";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-black-italic {
+  font-family: Stainless;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-bold {
+  font-family: Stainless;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-bold {
+  font-family: Stainless;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-bold-italic {
+  font-family: Stainless;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-bold-italic {
+  font-family: Stainless;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-compressed-black {
+  font-family: StainlessComp;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressedblack {
+  font-family: "Stainless Comp Black";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-black-italic {
+  font-family: "Stainless Comp Black";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-black-italic {
+  font-family: StainlessComp;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-bold {
+  font-family: StainlessComp;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-compressed-bold {
+  font-family: "Stainless Comp";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-compressed-bold-italic {
+  font-family: "Stainless Comp";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-compressed-bold-italic {
+  font-family: StainlessComp;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-compressed-light {
+  font-family: StainlessComp;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-light {
+  font-family: "Stainless Comp Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-light-italic {
+  font-family: "Stainless Comp Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-light-italic {
+  font-family: StainlessComp;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-regular {
+  font-family: StainlessComp;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-regular {
+  font-family: "Stainless Comp";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-regular-italic {
+  font-family: "Stainless Comp";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-compressed-regular-italic {
+  font-family: StainlessComp;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-black {
+  font-family: StainlessCond;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-black {
+  font-family: "Stainless Cond Black";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-black-italic {
+  font-family: "Stainless Cond Black";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-black-italic {
+  font-family: StainlessCond;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-bold {
+  font-family: StainlessCond;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-condensed-bold {
+  font-family: "Stainless Cond";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin stainless-condensed-bold-italic {
+  font-family: "Stainless Cond";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-condensed-bold-italic {
+  font-family: StainlessCond;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@mixin stainless-condensed-light {
+  font-family: StainlessCond;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-light {
+  font-family: "Stainless Cond Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-light-italic {
+  font-family: "Stainless Cond Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-light-italic {
+  font-family: StainlessCond;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-regular {
+  font-family: StainlessCond;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-regular {
+  font-family: "Stainless Cond";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-regular-italic {
+  font-family: "Stainless Cond";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-condensed-regular-italic {
+  font-family: StainlessCond;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-extended-black {
+  font-family: StainlessExt;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-extended-black {
+  font-family: "Stainless Ext Black";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-extended-black-italic {
+  font-family: "Stainless Ext Black";
+  font-style: italic;
+  font-weight: normal;
+}
+@mixin stainless-extended-bold {
+  font-family: "Stainless Ext";
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin stainless-extended-bold-italic {
+  font-family: "Stainless Ext";
+  font-style: italic;
+  font-weight: bold;
+}
+@mixin stainless-extended-light {
+  font-family: "Stainless Ext Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-extended-light-italic {
+  font-family: "Stainless Ext Light";
+  font-style: italic;
+  font-weight: normal;
+}
+@mixin stainless-extended-regular {
+  font-family: "Stainless Ext";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-extended-regular-italic {
+  font-family: "Stainless Ext";
+  font-style: italic;
+  font-weight: normal;
+}
+@mixin stainless-light {
+  font-family: "Stainless Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-light-italic {
+  font-family: "Stainless Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-regular {
+  font-family: Stainless;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-regular {
+  font-family: Stainless;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin stainless-regular-italic {
+  font-family: Stainless;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin stainless-regular-italic {
+  font-family: Stainless;
+  font-style: italic;
+  font-weight: normal;
+}
+
