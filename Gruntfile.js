@@ -15,6 +15,15 @@ module.exports = function(grunt) {
         }        
       }
     },
+    
+    shell: {
+	    upload: {
+		    command: 'scp css/app.css boondoc7@boondockwalkerstaging.com:www/bw/wp-content/themes/twentythirteen/css/app.css',
+			    options: {
+				    stdout: true
+		    }	
+	    }
+    },
 
     copy: {
       scripts: {
@@ -60,7 +69,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'shell:upload']
       }
     }
   });
@@ -70,8 +79,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['copy', 'uglify', 'concat', 'watch']);
+  grunt.registerTask('default', ['copy', 'uglify', 'concat', 'watch', 'shell']);
 
 }
