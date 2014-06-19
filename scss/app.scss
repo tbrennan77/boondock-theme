@@ -22,10 +22,8 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
-  line-height: 1.2125em;
+  line-height: 1.2125em; 
 }
-
-.foo { color: red; }
 
 body {
   color: #808084;
@@ -336,30 +334,83 @@ ul.socialheader {
   }
 }
 
-.columns.text, .columns.whitetext {
-  background:#e6e6e6;
-  padding:64px 42px!important;
-  margin:1% 0 0 1%!important;
-  width:99%; 
-  font-size: 22px;
+.columns.text, .columns.whitetext, .columns.nobg {
   ul {
     font-size: 22px;
     padding-left: 20px;
   }
   h3 {
-    margin:0;
-    padding-bottom: 10px;
+		padding: 64px 64px 0 64px !important;
+		background: #e6e6e6;
+		margin: 0 0 -32px 0;
+  }
+  h3.nomargin {
+		margin: 0;
+		padding-bottom: 64px!important;
   }
   p {
     font-size: 22px;
+    padding:64px !important;
+    background:#e6e6e6;
+    margin: 0;
+    height: 100%;
   }
 }
 
+.row .large-4.columns .row .large-4.columns:first-child {
+	padding-right:1%!important;
+}
+
+.row .large-4.columns .row .large-4.columns:last-child {
+	padding-left:1%!important;
+}
+
+.edit2.row {
+	margin-right: 0px !important;
+	margin-top: 2%!important;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.emailsignup {
+	border-top: 1px solid #c6d0da;
+}
+
+.fi-address-book::before {
+	
+}
+
 .columns.whitetext {
-  background:white;
+	p {
+  	background:white!important;
+  }
   h3 {
     color:#e07e1b;
     font-family: "Stainless Light";
+    background:white!important;
+  }
+}
+
+.columns.nobg {
+	p {
+  	background:none!important;
+  }
+  h3 {
+    color:#636366;
+    font-family: "Stainless Light";
+    background:none!important;
   }
 }
 
@@ -581,6 +632,10 @@ a.workchilditem {
   padding: 3px 10px 0 0;
 }
 
+.checkboxwrap label {
+	line-height: 2.2;
+}
+
 .regular-checkbox {
   -webkit-appearance: none;
   background-color: #fafafa;
@@ -682,7 +737,13 @@ a.workchilditem {
   color: #e4801c;
 }
 
-.left-col img { margin-bottom:20px; float:right;}
+.prefix.button {
+	margin-top: 10px;
+}
+
+.left-col img { 
+	margin-bottom:20px; float:right;
+}
 
 #menu-mobile {
   line-height: 45px!important;
@@ -774,11 +835,6 @@ section.color-8 {
       float:right!important;
     }
 }
-
-
-
-
-
 
 .nav-doubleflip a.next {
   -webkit-perspective-origin: 0% 50%;
@@ -905,6 +961,62 @@ section.color-8 {
 
 
 
+
+figure.effect-sadie figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+    transform: translate3d(0,50%,0);
+}
+ 
+figure.effect-sadie h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    transition: transform 0.35s, color 0.35s;
+    transform: translate3d(0,-50%,0);
+}
+ 
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+    transition: opacity 0.35s, transform 0.35s;
+}
+ 
+figure.effect-sadie p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+}
+ 
+figure.effect-sadie:hover h2 {
+    color: #fff;
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+ 
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+
+
+
+
+
+
 /* Retina */
 
 @media  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
@@ -987,7 +1099,6 @@ section.color-8 {
     display:none!important;
   }
   
-  
   #menu-mobile li .sub-menu li a {
     line-height: 44px!important;
   }
@@ -1004,6 +1115,13 @@ section.color-8 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+	.row .row .row {
+    margin-top: 1%!important;
+  }
+  
+}
+
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
 @media only screen and (max-width: 768px) {
   p {
@@ -1018,14 +1136,21 @@ section.color-8 {
   .flex-control-nav li {
     margin: 0 3px;
   }
-  .columns.text {
-    padding: 20px 20px!important;
+  .bhfeed a h3 {
+		margin-left: 1%;
+	}
+  .columns.text, .columns.whitetext, .columns.nobg {
+    padding: 1% 0 0 1% !important;
     font-size: 16px;
+    h3 {
+	    padding: 32px !important;
+    }
     ul {
       font-size: 16px;
     }
     p {
       font-size: 16px;
+      padding: 32px !important;
     }
   }
   .flex-control-paging li a {
@@ -1040,6 +1165,9 @@ section.color-8 {
     top: 23px;
     width: 70%;
   }
+  .cat-page {
+		padding-right: 1%;
+	}
   .footer-container {
     padding: 15px;
     ul {
