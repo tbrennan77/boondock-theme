@@ -1203,6 +1203,35 @@ figure.effect-sadie:hover p {
 	width: auto;
 }
 
+div.newssidebar ul li {
+	padding: 5px 0;
+	a {
+		display:block;
+	}
+	span.newsdate {
+		font-size: 12px;
+		padding-left: 10px;
+	}
+}
+
+.newsdateblock span {
+	background: #e4801c;
+	color: #ffffff;
+	text-align: left;
+	width: 92%;
+	display: block;
+	padding: 20px 10px 20px 10px;
+	margin-top: 10px;
+}
+
+.row.newsrow {
+	border-bottom:1px solid $grey;
+	padding: 10px 0 20px 0;
+	&:last-child {
+		border-bottom:none;
+	}
+}
+
 
 
 
@@ -1420,7 +1449,7 @@ div.whyboondock [data-magellan-expedition-clone] {
 /* Styles for Landscape screen */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {    
 	.row .row .row {
-		margin-top: 4%!important;
+		/* margin-top: 4%!important; */ 
 	}
 }
 
