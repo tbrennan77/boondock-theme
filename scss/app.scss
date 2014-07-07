@@ -33,6 +33,14 @@ p, li {
 	font-size: 17px;
 } 
 
+img.alignright {
+	float:right;
+}
+
+img.alignleft {
+	float:left;
+}
+
 .gn-menu-main {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -86,7 +94,7 @@ p, li {
 }
 
 body.page-id-848 .row.main-row .row, body.page-id-9 .row.main-row .row, body.page-id-11 .row.main-row .row {
-	padding: 0 56px;
+	padding: 0 2%;
 }
 
 a.ssba_facebook_share img, a.ssba_twitter_share img, a.ssba_linkedin_share img, a.ssba_google_share img {
@@ -177,7 +185,7 @@ ol {
     position: absolute;
     width: 315px;
     top: 29px;
-    left: 65px;
+    left: 3%;
     z-index: 102;
     height: auto;
   }
@@ -335,16 +343,17 @@ ul.capul img {
 }
 
 .pagetitle {
-  padding: 80px 0 0 61px!important;
+  padding: 2% 0 0 3% !important;
   h1 {
     font-size: 50px;
     margin: 0;
     line-height: 50px;
+    margin-left: -5px;
   }
   h2 {
     font-size: 25px;
     margin: 0;
-    padding: 22px 0 35px 3px;
+    padding: 22px 0 35px 0;
     line-height: 25px;
   }
   .siblingnav {
@@ -1214,14 +1223,46 @@ div.newssidebar ul li {
 	}
 }
 
-.newsdateblock span {
+div.newscontentblock {
+	padding-left:20px!important;
+}
+
+.newsdateblock span.ndatewrap {
 	background: #e4801c;
-	color: #ffffff;
-	text-align: left;
 	width: 92%;
-	display: block;
 	padding: 20px 10px 20px 10px;
 	margin-top: 10px;
+}
+
+.newsdateblock span {
+  color: #ffffff;
+	text-align: center;
+	width: 100%;
+	display: block;
+	line-height: 20px;
+}
+
+.newsdateblock span.dmonth{
+	text-transform: uppercase;
+}
+
+.newsdateblock span.dday{
+	font-family: "Stainless Ext","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif !important;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.columns.blogmainpage {
+	padding-left: 3%!important;
+}
+
+.columns.blogmainpage.newscolumn {
+	padding-left:61px!important;
+}
+
+div.allnewswrap {
+	padding: 10%!important;
 }
 
 .row.newsrow {
@@ -1323,6 +1364,11 @@ div.whyboondock [data-magellan-expedition-clone] {
 	text-align: center;
 }
 
+.row.blog-main {
+	margin: 1.4% 4% 0 0 !important;
+	padding-bottom: 1.4%;
+}
+
 
 
 
@@ -1382,6 +1428,11 @@ div.whyboondock [data-magellan-expedition-clone] {
   .nav-menu {
     display:none;
   }
+  
+  .row.blog-main {
+		padding-left: 0!important;
+	}
+
   .mobile-menu {
     display:block;
   }
@@ -1485,9 +1536,6 @@ div.whyboondock [data-magellan-expedition-clone] {
       padding: 32px !important;
     }
   }
-	body.page-id-848 .row.main-row .row, body.page-id-9 .row.main-row .row, body.page-id-11 .row.main-row .row {
-		padding: 0 2%;
-	} 
   body.page-id-848 .row.main-row section {
 	  display:none;
   }
