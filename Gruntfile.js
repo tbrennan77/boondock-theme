@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     
     shell: {
 	    upload: {
-		    command: 'scp css/app.css boondoc4@boondockwalker.com:www/bw/wp-content/themes/twentythirteen/css/app.css',
+		    command: 'scp css/app.css boondoc4@boondockwalker.com:www/wp-content/themes/twentythirteen/css/app.css',
 			    options: {
 				    stdout: true
 		    }	

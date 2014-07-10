@@ -41,6 +41,9 @@ img.alignleft {
 	float:left;
 }
 
+::selection {color:$white;background:$orange;}
+::-moz-selection {color:$white;background:$orange;}
+
 .gn-menu-main {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -457,6 +460,69 @@ ul.capul img {
   }
 }
 
+.columns.titletext {
+	h2{
+		border-bottom: 1px solid $darkgrey;
+		padding: 25px 0 10px 2%7;
+		margin-bottom: 0;
+		font-size: 27px;
+	}	
+}
+
+.flag {
+	background: #e4801c;
+	padding: 10px;
+	color: #ffffff;
+	float: left;
+	margin-bottom: -37px;
+	z-index: 1;
+	position: relative;
+	-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover .flag {
+	background:$darkerorange;
+}
+
+/*.l2 {
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  -webkit-animation-duration: .4s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+a:hover .l2 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-animation-name: l2;
+  -webkit-animation-delay: .4s;
+}
+
+
+@-webkit-keyframes l2 {
+  0%    { width: 0; background: #FFF; }
+  100%  { width: 100%; background: #FFF; }
+}*/
+
+
+
+
+
+
+
+
+
 .textexample h3{
 	font-family: "Stainless Ext", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif!important;
 }
@@ -559,6 +625,63 @@ ul.capul img {
 	  background: $darkorange !important;
 	}
 }
+
+
+
+
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 8px 15px;
+    line-height: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid $lightgrey;
+    color: $grey;
+} 
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: $orange;
+    background: $lightgrey;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
+
+
+body.paged.page-template-blog_page-php .featuredpost{
+	display:none;
+}
+
+
 
 .recent-blog-post {
   img {
@@ -800,7 +923,7 @@ a.workchilditem {
 }
 
 .pagination {
-	padding: 10px 4% 50px 4%;
+	padding: 10px 2% 50px 2%;
 }
 
 .bsidebar input[type="submit"] {
@@ -985,6 +1108,12 @@ section.color-8 {
     .nav-doubleflip a.prev, .nav-doubleflip a.next {
       float: none!important;
       display: block; 
+    }
+    .nav-doubleflip a div {
+	    height:80px;
+    }
+    body.page-template-bio_page-php .nav-doubleflip a div {
+	    height:150px;
     }
     section.color-8 {
       width: 40px;
@@ -1273,6 +1402,9 @@ div.allnewswrap {
 	}
 }
 
+li.nonavline {
+	border-left: 0px;
+}
 
 
 
@@ -1290,7 +1422,7 @@ div.whyboondock section {
   overflow:auto;
 }
 
-div.whyboondock .bg-1, .bg-2, .bg-3 {
+div.whyboondock .bg-1, div.whyboondock .bg-2, div.whyboondock .bg-3, div.whyboondock .bg-4, div.whyboondock .bg-5, div.whyboondock .bg-6, div.whyboondock .bg-7, div.whyboondock .bg-8 {
 	color:#fff;
   -webkit-background-size: auto, cover!important;
   -moz-background-size: auto, cover!important;
@@ -1299,16 +1431,37 @@ div.whyboondock .bg-1, .bg-2, .bg-3 {
 }
 
 div.whyboondock .bg-1 {
-  background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_color_boondock_walker.jpg') no-repeat center center fixed;
+  background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_7_boondock_walker.jpg') no-repeat center center fixed;
 }
   
 div.whyboondock .bg-2 {
-	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_gray_boondock_walker.jpg') no-repeat center center fixed;
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_2_walk_boondock_walker.jpg') no-repeat center center fixed;
 }
 
 div.whyboondock .bg-3 {
-	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_test_718_boondock_walker.jpg') no-repeat center center fixed;
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_8_boondock_walker.jpg') no-repeat center center fixed;
 }
+
+div.whyboondock .bg-4 {
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_1_map_boondock_walker.jpg') no-repeat center center fixed;
+}
+
+div.whyboondock .bg-5 {
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_6_boondock_walker.jpg') no-repeat center center fixed;
+}
+
+div.whyboondock .bg-6 {
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_4_working_boondock_walker.jpg') no-repeat center center fixed;
+}
+
+div.whyboondock .bg-7 {
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_color_boondock_walker.jpg') no-repeat center center fixed;
+}
+
+div.whyboondock .bg-8 {
+	background: url('../images/dot-pattern.png') 100px 100px, url('../images/background_5_sail_boondock_walker.jpg') no-repeat center center fixed;
+}
+
 
 div.whyboondock .row.why {
 	padding: 50px 45px!important;
@@ -1521,12 +1674,21 @@ div.whyboondock [data-magellan-expedition-clone] {
   .bhfeed a h3 {
 		margin-left: 1%;
 	}
-
+	
+	.flag{
+	  background-color:rgba(228,128,28,0.5);
+	  padding: 6px;
+	}
+	
+	.columns.text h3.nomargin, .columns.whitetext h3.nomargin, .columns.nobg h3.nomargin {
+		padding-bottom: 15px!important;
+	}
+	
   .columns.text, .columns.whitetext, .columns.nobg {
     padding: 1% 0 0 1% !important;
     font-size: 16px;
     h3 {
-	    padding: 32px !important;
+	    padding: 15px !important;
     }
     ul {
       font-size: 16px;
@@ -1602,13 +1764,14 @@ div.whyboondock [data-magellan-expedition-clone] {
 		padding: 20px!important;
 	}
   .footer-container {
+    padding: 17px !important;
     ul {
       margin: 4px 0 0 0;
     }
   }
   .sub-menu > li a img {
     filter: none!important;
-    -webkit-filter: grayscale($white)!important;
+    -webkit-filter: none!important;
   }
   .pagetitle {
     padding: 10px 0 0 15px!important;
@@ -1622,6 +1785,9 @@ div.whyboondock [data-magellan-expedition-clone] {
       line-height: 18px;
     }
   }
+  ul.gn-submenu .phone {
+		margin-bottom: 45px;
+	}
   .gn-menu-wrapper {
     /* IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1682,8 +1848,14 @@ div.whyboondock [data-magellan-expedition-clone] {
     padding: 0 0 6px 0 !important;
   }
   
-  .homefooter li {
-		padding: 15px 0px !important;
+  ul.homefooter {
+  	padding: 1% 4% 4% 4%;
+		li {
+			padding: 6px 0px !important;
+			ul {
+				margin-left: 18px;
+			}
+		}
 	}
 	
 	.gn-menu-main:hover {
